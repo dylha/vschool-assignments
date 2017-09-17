@@ -1,0 +1,45 @@
+h1.header {
+    font-size: 10em;
+    font-family: sans-serif;
+    position: absolute;
+    left: -275px;
+    top: 250px;
+    z-index: -1;
+}
+
+form.input {
+    position: absolute;
+    left: 63px;
+    top: 400px
+}
+
+ul.list {
+    column-count: 3;
+    text-align: center;
+    font-size: 2.5em;
+    list-style-type: none;
+}
+
+ul.list-pt-2 {
+    column-count: 3;
+    text-align: center;
+    font-size: 2.5em;
+    list-style-type: none;
+    position: relative;
+    top: 150px;
+}
+
+.blue {
+    color: #003876;
+}
+
+li {
+    margin-top: 5px;
+    border: 1px solid #003876;
+}
+
+li:hover {
+/*    border: 1px solid #003876;*/
+    margin-left: 25px;
+    color: #003876;
+}

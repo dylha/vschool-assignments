@@ -1,0 +1,30 @@
+.pink {
+    height: 125px;
+    background-color: #F5C6D6;
+    border: 5px solid white;
+}
+
+.hot-pink {
+    height: 125px;
+    background-color: #EE2E84;
+    border: 5px solid white;
+}
+
+
+.blue {
+    height: 125px;
+    background-color: #85CFD8;
+    border: 5px solid white;
+}
+
+.green {
+    height: 125px;
+    background-color: #8DC63F;
+    border: 5px solid white;
+}
+
+.orange {
+    height: 125px;
+    background-color: #E76E34;
+    border: 5px solid white;
+}

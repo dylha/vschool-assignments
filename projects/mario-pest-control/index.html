@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Mario Pest Control</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="styles.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
@@ -14,45 +15,60 @@
     <h1>Mario Pest Control</h1>
 
     <img class="goomba" src="https://media.giphy.com/media/A1GHXIybD7mhO/giphy.gif">
-    
+
     <h3>Goomba Count: </h3>
-    <input class="gci" id="goomba-count" type="number">
-    <button class="gcb">Calculate</button>
-
-   
-    
+    <input id="goomba-count" type="number">
 
 
 
+    <div>
+        <span>Goomba  Price: </span> <span id="goomba-price">5</span> <span class="owed">Coins Owed - </span>
+    </div>
 
-
+    <span id="goomba-total">TBD</span>
 
 
 
     <img class="bob-omb" src="http://rs1184.pbsrc.com/albums/z339/SpriteMasterX/Animated%20Sprites/BobOmb.gif~c200">
 
+    <h3>Bob-omb Count: </h3>
+    <input id="bobomb-count" type="number">
 
 
 
+    <div>
+        <span>Bob-omb Price: </span> <span id="bobomb-price">7</span> <span class="owed"> Coins Owed - </span>
+    </div>
 
-
-
+    <span id="bobomb-total">TBD</span>
 
 
 
     <img class="cheep" src="http://rs515.pbsrc.com/albums/t355/chaoticfox9900/Cheep20Cheep20-20Red.gif~c200">
 
+    <h3>Cheep-cheep Count: </h3>
+    <input id="cheep-count" type="number">
 
-  
-    <h4>Total Owed: <span id="goomba-total">TBD</span></h3>
-   
-   
-   
-   
+
+
+    <div>
+        <span>Cheep Price: </span> <span id="cheep-price">11</span> <span class="owed">Coins Owed - </span>
+    </div>
+
+    <span id="cheep-total">TBD</span>
+
+
+
+    <div>
+        <button class="btn btn-danger" class="resultButton" id="button">Total Owed</button>
+        <span class="result" id="total-coins">TBD</span><span></span>
+    </div>
+
     <footer><a href="http://www.nintendo.com/">nintendo.com</a> <br> mario@nintendo.com <br> 12345 S Rainbow Road <br> Mushroom Kingdom, 67890</footer>
 
-</body>
 
-<script src="script.js"></script>
+    <script src="script.js" type="text/javascript"></script>
+
+</body>
 
 </html>

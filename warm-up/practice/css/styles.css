@@ -7,3 +7,13 @@
     height: 29px;
     width: 68px;
 }
+
+.btn-success {
+    background-color: #33aaff;
+    border: 2px solid #888888;
+}
+
+.btn-success:hover {
+    background-color: #2299dd;
+    border: 2px solid #888888;
+}

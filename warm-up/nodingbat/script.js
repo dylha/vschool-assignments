@@ -1,10 +1,19 @@
-// Given an int n, return the absolute difference between n and 21,
-// except return double the absolute difference if n is over 21.
+// We have two monkeys, a and b, and the parameters aSmile and bSmile indicate if
+// each is smiling. We are in trouble if they are both smiling or if neither of
+// them is smiling. Return true if we are in trouble.
 
-var diff21 = function(n) { 
-	if (n <= 21) {
-    	return Math.abs(21-n);
-    } else {
-      	return Math.abs((21-n) * 2);
-	}
+//var monkeyTrouble = function(aSmile, bSmile){ 
+//    if (aSmile === bSmile) {
+//    	return true;
+//	} else {
+//      	return false;
+//    }
+//}
+//
+var monkeyTrouble = function (aSmile, bSmile) {
+    return aSmile === bSmile
 }
+
+console.log(monkeyTrouble(true, false));
+
+
