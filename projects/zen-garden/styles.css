@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+}
+
+.background {
+    background: url(max-sandelin-239035.jpg) no-repeat center fixed;
+    background-size: cover;
+/*    opacity: .9;*/
+}
+
+.header {
+    margin-bottom: 50px;
+    height: 350px;
+    z-index: -1;
+}
+
+.logo {
+    position: absolute;
+    width: 20%;
+    right: 810px;
+    top: 100px;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 4.5em;
+    font-family: 'Julius Sans One', sans-serif;
+    margin-bottom: -5px;
+    position: absolute;
+    top: 95px
+}
+
+h2 {
+    color: #ffffff;
+    font-size: 2em;
+    font-family: 'IM Fell Great Primer', serif;
+    font-style: italic;
+    margin-bottom: 50px;
+    position: absolute;
+    top: 175px;
+}
+
+.para {
+    color: #2e484c;
+    font-size: 1.5em;
+    font-family: serif;
+}
+
+.white-bg {
+    background-color: #ffffff;
+}
+
+.tree-bg {
+    background: url(matthew-kosloski-18065.jpg) no-repeat center fixed;
+    background-size: cover;
+    z-index: -1;
+}
+
+.green-bg {
+    background-color: rgb(189, 214, 200);
+    z-index: -1;
+    opacity: 0.94;
+}
+
+.top-bottom {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.dl {
+    color: #809b7e;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.dl:hover {
+    color: #ffffff;
+    background-color: #0d8ba1;
+    text-decoration: none;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+p a {
+    font-family: serif;
+    color: #0d8ba1;
+}
+
+p a:hover {
+    font-family: serif;
+    color: #0dabc1;
+}
+
+h3 {
+    color: #2e484c;
+    font-size: 2.5em;
+    font-family: "Julius Sans One", sans-serif;
+    font-weight: normal;
+}
+
+.hide-text {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.sidebar {
+    background-color: #e5ede8;
+    font-size: 1.5em;
+    text-decoration-color: none;
+    color: #607476;
+    display: block;
+    position: absolute;
+}
+
+.sidebar li {
+    font-family: 'Julius Sans One', sans-serif;
+    margin-top: 25px;
+    list-style: none;
+}
+
+.sidebar a {
+    color: #607476;
+    font-family: 'Julius Sans One', sans-serif;
+    margin-top: 25px;
+    list-style: none;
+}
+
+.sidebar a:hover {
+    color: #0d8ba1;
+    text-decoration: none;
+}
+
+.by {
+    font-size: 1em;
+    font-family: 'IM Fell Great Primer', serif;
+    font-style: italic;
+    color: #c0cac3;
+}
+
+.author {
+    font-family: serif;
+    color: #616857;
+    font-size: 0.9em;
+}
