@@ -9,7 +9,7 @@ console.log("")
 console.log("Welcome to Game")
 console.log("")
 
-var name = readline.question("What is your name? ");
+var name = readline.question("What is your name? ").toUpperCase();
 console.log("")
 
 var age = parseInt(readline.question("How old are you? "));

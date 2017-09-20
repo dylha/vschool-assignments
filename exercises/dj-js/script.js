@@ -1,9 +1,11 @@
-document.getElementById("green").addEventListener("dblclick", function() {
-    document.getElementById("green").style.backgroundColor = "#55ff88"
+var box = document.getElementById("box")
+
+box.addEventListener("dblclick", function() {
+    box.style.backgroundColor = "#55ff88"
 });
 
 document.getElementById("orange").addEventListener("onscroll", function() {
-    document.getElementById("green").style.backgroundColor = "#ffcc33"
+    box.style.backgroundColor = "#ffcc33"
 });
 
 //document.getElementById("green").addEventListener("keydown", function(event) {

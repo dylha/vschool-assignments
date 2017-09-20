@@ -3,22 +3,59 @@
 }
 
 .background {
-    background: url(max-sandelin-239035.jpg) no-repeat center fixed;
+    background: url(http://www.csszengarden.com/214/huntington.jpg) no-repeat center fixed;
     background-size: cover;
-/*    opacity: .9;*/
+    /*    opacity: .9;*/
+    z-index: -1;
+}
+
+.background-footer {
+    background: url(http://www.csszengarden.com/214/koi.jpg) no-repeat center fixed;
+    background-size: cover;
+    /*    opacity: .9;*/
+    height: 350px;
 }
 
 .header {
     margin-bottom: 50px;
     height: 350px;
-    z-index: -1;
 }
 
 .logo {
     position: absolute;
     width: 20%;
-    right: 810px;
-    top: 100px;
+    right: 800px;
+    top: 90px;
+}
+
+
+
+.designs {
+    color: #ffffff;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 2em;
+    padding-left: 10px;
+    padding: 10px;
+    position: absolute;
+    left: 1100px;
+    top: 150px;
+    background-color: rgba(255,255,255, .1);
+}
+
+.designs-bg {
+    width: 410px;
+    height: 350px;
+    background-color: #000000;
+    opacity: .1;
+    position: absolute;
+    top: 0;
+    left: 71.5%;
+}
+
+.designs:hover {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: rgba(255,255,255, .4);
 }
 
 h1 {
@@ -40,6 +77,27 @@ h2 {
     top: 175px;
 }
 
+.beauty {
+    color: #c0cac3;
+}
+
+.footer {
+    color: #a1b8b4;
+    font-size: 3em;
+    font-family: 'IM Fell Great Primer', serif;
+    font-style: italic;
+    position: relative;
+    text-align: center;
+    top: 110px;
+    height: 150px;
+    right: 190px;
+    opacity: .8
+}
+
+.footer a {
+    color: #e5ede8;
+}
+
 .para {
     color: #2e484c;
     font-size: 1.5em;
@@ -57,6 +115,7 @@ h2 {
 }
 
 .green-bg {
+    width: 71.5%;
     background-color: rgb(189, 214, 200);
     z-index: -1;
     opacity: 0.94;
@@ -103,17 +162,45 @@ h3 {
 }
 
 .sidebar {
-    background-color: #e5ede8;
     font-size: 1.5em;
     text-decoration-color: none;
     color: #607476;
     display: block;
     position: absolute;
+    top: -50px;
+}
+
+.sidebar-bg {
+    width: 410px;
+    height: 919px;
+    top: 350px;
+    left: 71.5%;
+    background-color: #e5ede8;
+    position: absolute;
+}
+
+.sidebar-bg-3 {
+    width: 410px;
+    height: 778px;
+    top: 2015px;
+    left: 71.5%;
+    background-color: #e5ede8;
+    position: absolute;
+}
+
+.sidebar-bg-2 {
+    width: 410px;
+    height: 746px;
+    top: 1269px;
+    left: 71.5%;
+    background-color: #b1cebd;
+    opacity: .98;
+    position: absolute;
 }
 
 .sidebar li {
     font-family: 'Julius Sans One', sans-serif;
-    margin-top: 25px;
+    margin-top: 40px;
     list-style: none;
 }
 
@@ -140,4 +227,32 @@ h3 {
     font-family: serif;
     color: #616857;
     font-size: 0.9em;
+}
+
+.bottom {
+    width: 100%;
+    height: 190px;
+    background-color: #134347;
+    position: absolute;
+    z-index: -1;
+}
+
+.external {
+    color: #ffffff;
+    text-align: center;
+    font-size: 5em;
+    position: relative;
+    top: 45px;
+    left: 265px;
+    letter-spacing: 70px;
+    display: inline-block;
+}
+
+.external a {
+    color: #dddddd;
+}
+
+.external a:hover {
+    color: #ffffff;
+    text-decoration: none;
 }
