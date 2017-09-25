@@ -5,15 +5,23 @@ var shift = parseInt(readline.questionInt("How many letters would you like to sh
 console.log("")
 console.log("")
 
-var alphabet = ["abcdefghijklmnopqrstuvwxyz"]
 
 function caesar (str, shift) {
-    for (var i = 0; i < alphabet.length; i++) {
-        return alphabet[i]
+    var alphabet = ["abcdefghijklmnopqrstuvwxyz"]
+    var results = ""
+    for (var i = 0; i < str.length; i++) {
+        var currentLetter = str[i]
+        var index = alphabet.indexOf(currentLetter);
+        // if -1
+            // results += currentLetter
+        var newIndex = index + shift;
+        results += alphabet[newIndex];
     }
+    return results;
 }
 
 console.log(caesar(input, shift));
-
+console.log("")
+console.log("")
 
 

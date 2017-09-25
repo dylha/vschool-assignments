@@ -1,0 +1,66 @@
+* {
+    font-family: arial, sans-serif;
+    background: url(jewad-alnabi-351610.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: #ffffff;
+}
+
+h1 {
+    margin: 25px;
+}
+
+h2 {
+    margin: 25px;
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 1.2em;
+}
+
+h3 {
+    margin: 25px;
+}
+
+input {
+    margin: 25px;
+    padding: 8px;
+    width: 15%;
+    font-size: 1.0em;
+    margin-right: 0;
+}
+
+button {
+    margin: 25px;
+    padding: 8px;
+    width: 16%;
+    font-size: 1.2em;
+    display: inline;
+}
+
+button:focus {
+    outline: 0;
+}
+
+.select {
+    width: 25px;
+    font-size: 1.2em;
+}
+
+
+
+::-webkit-input-placeholder { /* Chrome */
+  color: #dafaaa;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #dafaaa;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #dafaaa;
+  opacity: 1;
+}
+:-moz-placeholder { /* Firefox 4 - 18 */
+  color: #dafaaa;
+  opacity: 1;
+}

@@ -1,0 +1,119 @@
+h1 {
+    color: #555555;
+    font-size: 5em;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-top: -1%;
+    color: #ffaa77;
+    text-align: center;
+}
+
+.water {
+    font-size: 5em;
+    color: #555555;
+}
+
+.h20 {
+    font-size: 5em;
+    color: #555555;
+}
+
+.list {
+    font-size: 2em;
+    list-style: none;
+}
+
+.name {
+    color: #555555;
+    font-size: 1em;
+    font-style: italic;
+    letter-spacing: 3px;
+    list-style: none;
+}
+
+.description {
+    color: #ffaa77;
+    font-size: .7em;
+    list-style: none;
+    position: relative;
+}
+
+.price {
+    color: #66ddaa;
+    font-size: .5em;
+    list-style: none;
+    position: relative;
+}
+
+.align-left {
+    text-align: left;
+    position: relative;
+    right: 13%;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.align-justify {
+    text-align: justify;
+}
+
+.water-pic {
+    border-radius: 10%;
+    position: absolute;
+    top: 80%;
+    left: 10%;
+}
+
+.h20-pic {
+    border-radius: 10%;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+}
+
+@media (max-width: 480px) {
+    .align-left {
+        text-align: left;
+        position: relative;
+        right: 25%;
+    }
+}
+
+@media (max-width: 1400px) {
+    .water-pic {
+        -webkit-transition: opacity 0.25s ease-out;
+        -moz-transition: opacity 0.25s ease-out;
+        -o-transition: opacity 0.25s ease-out;
+        transition: opacity 0.25s ease-out;
+        opacity: 0;
+    }
+    .h20-pic {
+        -webkit-transition: opacity 0.25s ease-out;
+        -moz-transition: opacity 0.25s ease-out;
+        -o-transition: opacity 0.25s ease-out;
+        transition: opacity 0.25s ease-out;
+        opacity: 0;
+    }
+}
+
+@media (min-width: 1000px) {
+    .water-pic {
+        -webkit-transition: opacity 0.5s ease-in;
+        -moz-transition: opacity 0.5s ease-in;
+        -o-transition: opacity 0.5s ease-in;
+        transition: opacity 0.5s ease-in;
+        opacity: 1;
+    }
+    .h20-pic {
+        -webkit-transition: opacity 0.5s ease-in;
+        -moz-transition: opacity 0.5s ease-in;
+        -o-transition: opacity 0.5s ease-in;
+        transition: opacity 0.5s ease-in;
+        opacity: 1;
+    }
+}

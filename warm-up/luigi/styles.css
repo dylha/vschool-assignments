@@ -1,0 +1,42 @@
+h1 {
+    color: #eb1f22;
+}
+
+h2 {
+    color: #eb1f22;
+}
+
+p {
+    color: #eb1f22;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 150px
+}
+
+.yellow {
+    background-color: #ffda09;
+    height: 80px;
+    width: 100%;
+}
+
+.red {
+    background-color: #eb1f22;
+    height: 400px;
+    width: 100%;
+}
+
+.footer {
+    background-color: #ffda09;
+    height: 97px;
+    position: fixed;
+    bottom: 0px;
+}
+
+.mush {
+    max-height: 75px;
+}
+
+@media (max-width: 480px) {
+    
+}
