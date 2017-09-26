@@ -51,16 +51,18 @@ button:focus {
 
 
 ::-webkit-input-placeholder { /* Chrome */
-  color: #dafaaa;
+    color: #ededde;
+    opacity: .7
 }
 :-ms-input-placeholder { /* IE 10+ */
-  color: #dafaaa;
+    color: #ededde;
+    opacity: .7
 }
 ::-moz-placeholder { /* Firefox 19+ */
-  color: #dafaaa;
-  opacity: 1;
+    color: #ededde;
+    opacity: .7
 }
 :-moz-placeholder { /* Firefox 4 - 18 */
-  color: #dafaaa;
-  opacity: 1;
+    color: #ededde;
+    opacity: .7
 }

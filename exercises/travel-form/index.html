@@ -12,40 +12,35 @@
 
     <h2>Please fill out the following information</h2>
 
-    <form action="">
+    <form id="travel-form" name="travelform">
 
-        <input type="text" placeholder="First Name"/>
-        <input type="text" placeholder="Last Name"/>
-        
-        
-
-        <input type="email" placeholder="Email"/>
-
-        <input type="number" placeholder="Age"/>
-
+            <input name="firstname" type="text" placeholder="First Name"/>
+            <input name="lastname" type="text" placeholder="Last Name"/>
+            <input name="email" type="email" placeholder="Email"/>
+            <input name="age" type="number" placeholder="Age"/>
 
         <h3>Gender</h3>
-        <input class="select" type="radio" name="gender" value="male"> Male
-        <input class="select" type="radio" name="gender" value="female"> Female
-        <input class="select" type="radio" name="gender" value="other"> Other
+            <input class="select" type="radio" name="gender" value="male"> Male
+            <input class="select" type="radio" name="gender" value="female"> Female
+            <input class="select" type="radio" name="gender" value="other"> Other
 
         <h3>Destinations</h3>
-        <input class="select" type="checkbox" placeholder="San Fransisco, California"/> San Francisco
-        <input class="select" type="checkbox" placeholder="Anchorage, Alaska"/> Anchorage
-        <input class="select" type="checkbox" placeholder="Tokyo, Japan"/> Tokyo
-        <input class="select" type="checkbox" placeholder="Salt Lake City, Utah"/> Salt Lake City
+            <input name="destination" class="select" type="checkbox" value="San Fransisco, California"/> San Francisco
+            <input name="destination" class="select" type="checkbox" value="Anchorage, Alaska"/> Anchorage
+            <input name="destination" class="select" type="checkbox" value="Tokyo, Japan"/> Tokyo
+            <input name="destination" class="select" type="checkbox" value="Salt Lake City, Utah"/> Salt Lake City
 
         <h3>Dietary Restrictions</h3>
-        <input class="select" type="checkbox" placeholder="Vegetarian/Vegan"/> Vegetarian/Vegan
-        <input class="select" type="checkbox" placeholder="Lactose Intolerant"/> Kosher
-        <input type="text" placeholder="Allergies"/>
+            <input name="" class="select" type="checkbox" value="Vegetarian/Vegan"/> Vegetarian/Vegan
+            <input name="" class="select" type="checkbox" value="Lactose Intolerant"/> Kosher
+            <input name="" type="text" value="Allergies"/>
 
         <br>
 
-        <button id="send" type="submit">Submit</button>
-        <button id="send" type="reset">Clear</button>
+        <button id="submit" type="submit">Submit</button>
+        <button type="reset">Clear</button>
 
     </form>
-
+    <script src="script.js" ></script>
 </body>
 </html>
