@@ -21,6 +21,7 @@ if (age <= 12) {
 // ----------------------------------------------------------------------------
 
 
+
 // DEV TOOLS ------------------------------------------------------------------
 function rng(min, max) {
     return Math.floor((Math.random() * max) + min);
@@ -29,8 +30,64 @@ function rng(min, max) {
 
 
 
+// ENEMIES --------------------------------------------------------------------
+var enemies = [];
+
+var skellington = {
+    name: "Skellington",
+    health: 10,
+}
+enemies.push(skellington);
+
+var spook = {
+    name: "Spook",
+    health: 5,
+}
+enemies.push(spook);
+
+var actualBird = {
+    name: "Actual Bird",
+    health: 1,
+}
+enemies.push(actualBird);
+
+var firemanTed = {
+    name: "Fireman Ted",
+    health: 10,
+}
+enemies.push(firemanTed);
+
+var frameDrop = {
+    name: "Framerate Drop",
+    health: 500,
+}
+enemies.push(frameDrop);
+
+var geoff = {
+    name: "Geoff",
+    health: 2,
+}
+enemies.push(geoff);
+
+var jeff = {
+    name: "Jeff",
+    health: 20,
+}
+enemies.push(jeff);
+
+var lag = {
+    name: "Lag Spike",
+    health: 200,
+}
+enemies.push(lag);
+
+console.log(enemies);
+// ----------------------------------------------------------------------------
+
+
+
 // USER EQUIPMENT -------------------------------------------------------------
-var gp = 0 + "gp";
+var gp = 20 + "gp";
 
 var inventory = [gp];
 // ----------------------------------------------------------------------------
@@ -58,6 +115,8 @@ var townDistance = 2;
 // CHOICES --------------------------------------------------------------------
 var openWorld = ["Walk forward", "Open Inventory"];
 
+var inFight = ["Attack", "Abilities", "Open Inventory", "Run"];
+
 var inInventory = ["Inspect Inventory", "Exit Inventory"];
 // ----------------------------------------------------------------------------
 
@@ -76,8 +135,8 @@ console.log("You wake up on a green hill, the surrounding area deep in a forest.
 
 
 // OPEN WORLD -------------------------------------------------------------------
-while (townDistance) {
-    while (fight == 0) {
+while (townDistance > 0) {
+    while (fight === 0) {
         while (invo === 0) {
 
             index = readline.keyInSelect(openWorld, "What do you do? ");
@@ -86,28 +145,53 @@ while (townDistance) {
                 console.log("\n\n...You walk forward two paces...");
                 console.log("");
                 townDistance--
-                if (rng(1, 4)) {
+                break;
+                if (rng(1, 4) === 1) {
                     console.log("\n\n**** A monster appears from nowhere! ****\n\n");
                     fight = 1;
+                    
+                    
+                    
+                // FIGHT ---------------------------------------------------------------------
+//                while (fight === 1) {
+//                    console.log("\nIt's a " + monster)
+//
+//                    index = readline.keyInSelect(inFight, "What do you do? ");
+//
+//                    else if (index === 2) {
+//                        var invo = 1
+//                        console.log("\nYour inventory:\n" + inventory);
+//
+//                    } else if (index === 1) {
+//                        console.log("\nExiting inventory...");
+//                        var invo = 0
+//
+//                    } else {
+//                        console.log("\nExiting V-SCAPE...\n");
+//                        return;
+//                    }
+//                }
+                // ---------------------------------------------------------------------------
+                    
+                    
+                    
                 }
             } else if (index === 1) {
-                console.log("\n\n...Loading inventory...\n\n");
                 var invo = 1
 
 
 
                 // INVENTORY -----------------------------------------------------------------
                 while (invo === 1) {
-                    console.log("You look inside your backpack.")
+                    console.log("\nYou look inside your backpack.")
 
                     index = readline.keyInSelect(inInventory, "What do you do? ");
 
                     if (index === 0) {
-                        console.log("\n\nYour inventory:\n" + inventory);
-                        console.log("");
+                        console.log("\nYour inventory:\n" + inventory);
 
                     } else if (index === 1) {
-                        console.log("\n\n\nExiting inventory...\n\n");
+                        console.log("\nExiting inventory...");
                         var invo = 0
 
                     } else {
