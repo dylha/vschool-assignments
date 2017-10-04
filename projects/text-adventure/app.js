@@ -26,6 +26,10 @@ if (age <= 12) {
 function rng(min, max) {
     return Math.floor((Math.random() * max) + min);
 }
+
+function escape() {
+    console.log("\n...You escaped!\n");
+}
 // ----------------------------------------------------------------------------
 
 
@@ -44,44 +48,6 @@ var spook = {
     health: 5,
 }
 enemies.push(spook);
-
-var actualBird = {
-    name: "Actual Bird",
-    health: 1,
-}
-enemies.push(actualBird);
-
-var firemanTed = {
-    name: "Fireman Ted",
-    health: 10,
-}
-enemies.push(firemanTed);
-
-var frameDrop = {
-    name: "Framerate Drop",
-    health: 500,
-}
-enemies.push(frameDrop);
-
-var geoff = {
-    name: "Geoff",
-    health: 2,
-}
-enemies.push(geoff);
-
-var jeff = {
-    name: "Jeff",
-    health: 20,
-}
-enemies.push(jeff);
-
-var lag = {
-    name: "Lag Spike",
-    health: 200,
-}
-enemies.push(lag);
-
-console.log(enemies);
 // ----------------------------------------------------------------------------
 
 
@@ -90,6 +56,8 @@ console.log(enemies);
 var gp = 20 + "gp";
 
 var inventory = [gp];
+
+var abilities = []
 // ----------------------------------------------------------------------------
 
 
@@ -107,7 +75,7 @@ var fight = 0;
 
 var invo = 0;
 
-var townDistance = 2;
+var overworld = 1;
 // ----------------------------------------------------------------------------
 
 
@@ -135,7 +103,7 @@ console.log("You wake up on a green hill, the surrounding area deep in a forest.
 
 
 // OPEN WORLD -------------------------------------------------------------------
-while (townDistance > 0) {
+while (overworld === 1) {
     while (fight === 0) {
         while (invo === 0) {
 
@@ -144,8 +112,6 @@ while (townDistance > 0) {
             if (index === 0) {
                 console.log("\n\n...You walk forward two paces...");
                 console.log("");
-                townDistance--
-                break;
                 if (rng(1, 4) === 1) {
                     console.log("\n\n**** A monster appears from nowhere! ****\n\n");
                     fight = 1;
@@ -153,24 +119,85 @@ while (townDistance > 0) {
                     
                     
                 // FIGHT ---------------------------------------------------------------------
-//                while (fight === 1) {
-//                    console.log("\nIt's a " + monster)
+                while (fight === 1) {
+                    while (spook.health > 0) {
+                    console.log("\nIt's a " + spook.name + "!")
+
+                    index = readline.keyInSelect(inFight, "What do you do? ");
+
+                    if (index === 0) {
+                        console.log("\nYou swing your weapon!\n\n");
+                        (rng(1, 5))
+                        
+                    // ATTACK  ODDS --------------------------------------
+                        if (rng (0, 5) === 0) {
+                            console.log("\n...You missed!\n")
+                        } else if (rng (0, 5) === 1) {
+                            console.log("\n...You dealt 1 damage!\n")
+                            spook.health--
+                        } else if (rng (0, 5) === 2) {
+                            console.log("\n...You dealt 2 damage!\n")
+                            spook.health-2
+                        } else if (rng (0, 5) === 3) {
+                            console.log("\n...You dealt 3 damage!\n")
+                            spook.health-3
+                        } else if (rng (0, 5) === 4) {
+                            console.log("\n...You dealt 4 damage!\n")
+                            spook.health-4
+                        } else if (rng (0, 5) === 5) {
+                            console.log("\n...You dealt 5 damage!\n")
+                            spook.health-5
+                        } else if (index === 1) {
+                            console.log("\nExiting inventory...");
+                            var invo = 0
+                        } else {
+                            console.log("\nExiting V-SCAPE...\n");
+                            return;
+                        }
+                    // ---------------------------------------------------
+                        
+                    } else if (index === 1) {
+                        console.log("\nYou have no abilities!\n");
+                        
+                    } else if (index === 2) {
+                        var invo = 1
+//                            // FIGHT INVENTORY ---------------------------------------------------------------
+//                                while (invo === 1) {
+//                                    while (fight === 0) {
+//                                        console.log("\nYou look inside your backpack.")
 //
-//                    index = readline.keyInSelect(inFight, "What do you do? ");
+//                                        index = readline.keyInSelect(inInventory, "What do you do? ");
 //
-//                    else if (index === 2) {
-//                        var invo = 1
-//                        console.log("\nYour inventory:\n" + inventory);
+//                                        if (index === 0) {
+//                                            console.log("\nYour inventory:\n" + inventory);
 //
-//                    } else if (index === 1) {
-//                        console.log("\nExiting inventory...");
-//                        var invo = 0
+//                                        } else if (index === 1) {
+//                                            console.log("\nExiting inventory...");
+//                                            var invo = 0
+//                                            var fight = 1
 //
-//                    } else {
-//                        console.log("\nExiting V-SCAPE...\n");
-//                        return;
-//                    }
-//                }
+//                                        } else {
+//                                            console.log("\nExiting V-SCAPE...\n");
+//                                            return;
+//                                        }
+//                                    }
+//                                }
+//                                // ---------------------------------------------------------------------------
+                    } else if (index === 3) {
+                        console.log("\nYou try to run...\n")
+                        if (rng(1, 4) === 1) {
+                            setTimeout(escape, 1000);
+                            var fight = 0;
+                        }
+                        
+                    } else { 
+                        console.log("\nExiting V-SCAPE...\n");
+                        return;
+                    } 
+                    }
+                    console.log("\n\n**** The " + spook.name + " has been slain! ****\n\n")
+                    var fight = 0
+                }
                 // ---------------------------------------------------------------------------
                     
                     
