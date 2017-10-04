@@ -1,0 +1,47 @@
+html {
+  background: url(./components/images/andre-benz-248744.jpg) no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+.title {
+    font-family: sans-serif;
+    font-size: 3em;
+    color: #ffffff;
+    text-align: center;
+    background-color: #ff1155;
+    padding: 25px;
+}
+
+.nav {
+    list-style-type: none;
+    text-align: center;
+    margin-bottom: 200px;
+    padding: 0;
+    color: white;
+    font-family: sans-serif;
+    font-size: 2em;
+    position: relative;
+    right: 20px;
+    top: 85px
+}
+
+.navbg {
+    height: 75%;
+    width: 15%;
+    background-color: rgba(255, 255, 255, .5);
+    position: relative;
+}
+
+.footer {
+    font-family: sans-serif;
+    font-size: 1em;
+    color: rgba(255, 255, 255, .4);
+    text-align: right;
+    position: relative;
+    top: 50%;
+    display: block;
+}

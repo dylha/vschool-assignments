@@ -89,7 +89,6 @@ var inInventory = ["Inspect Inventory", "Exit Inventory"];
 // ----------------------------------------------------------------------------
 
 
-
 // GAME START -----------------------------------------------------------------
 console.log("\n\n\n            ·._.··`¯´´·.¸¸.·` WELCOME TO V-SCAPE `·.¸¸.·´´¯`··._.·");
 console.log("");
@@ -115,9 +114,9 @@ while (overworld === 1) {
                 if (rng(1, 4) === 1) {
                     console.log("\n\n**** A monster appears from nowhere! ****\n\n");
                     fight = 1;
-                    
-                    
-                    
+
+
+
                 // FIGHT ---------------------------------------------------------------------
                 while (fight === 1) {
                     while (spook.health > 0) {
@@ -128,7 +127,7 @@ while (overworld === 1) {
                     if (index === 0) {
                         console.log("\nYou swing your weapon!\n\n");
                         (rng(1, 5))
-                        
+
                     // ATTACK  ODDS --------------------------------------
                         if (rng (0, 5) === 0) {
                             console.log("\n...You missed!\n")
@@ -155,10 +154,10 @@ while (overworld === 1) {
                             return;
                         }
                     // ---------------------------------------------------
-                        
+
                     } else if (index === 1) {
                         console.log("\nYou have no abilities!\n");
-                        
+
                     } else if (index === 2) {
                         var invo = 1
 //                            // FIGHT INVENTORY ---------------------------------------------------------------
@@ -189,19 +188,19 @@ while (overworld === 1) {
                             setTimeout(escape, 1000);
                             var fight = 0;
                         }
-                        
-                    } else { 
+
+                    } else {
                         console.log("\nExiting V-SCAPE...\n");
                         return;
-                    } 
+                    }
                     }
                     console.log("\n\n**** The " + spook.name + " has been slain! ****\n\n")
                     var fight = 0
                 }
                 // ---------------------------------------------------------------------------
-                    
-                    
-                    
+
+
+
                 }
             } else if (index === 1) {
                 var invo = 1
