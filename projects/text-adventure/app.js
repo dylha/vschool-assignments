@@ -40,12 +40,14 @@ var enemies = [];
 var skellington = {
     name: "Skellington",
     health: 10,
+    drop: "a Trumpet"
 }
 enemies.push(skellington);
 
 var spook = {
     name: "Spook",
     health: 5,
+    drop: "Sheets"
 }
 enemies.push(spook);
 // ----------------------------------------------------------------------------
@@ -71,10 +73,6 @@ var hp = 10
 // USER STATUS ----------------------------------------------------------------
 var hp = 100
 
-var fight = 0;
-
-var invo = 0;
-
 var overworld = 1;
 // ----------------------------------------------------------------------------
 
@@ -83,7 +81,7 @@ var overworld = 1;
 // CHOICES --------------------------------------------------------------------
 var openWorld = ["Walk forward", "Open Inventory"];
 
-var inFight = ["Attack", "Abilities", "Open Inventory", "Run"];
+var inFight = ["Attack", "Abilities", "Run"];
 
 var inInventory = ["Inspect Inventory", "Exit Inventory"];
 // ----------------------------------------------------------------------------
@@ -103,8 +101,6 @@ console.log("You wake up on a green hill, the surrounding area deep in a forest.
 
 // OPEN WORLD -------------------------------------------------------------------
 while (overworld === 1) {
-    while (fight === 0) {
-        while (invo === 0) {
 
             index = readline.keyInSelect(openWorld, "What do you do? ");
 
@@ -113,13 +109,12 @@ while (overworld === 1) {
                 console.log("");
                 if (rng(1, 4) === 1) {
                     console.log("\n\n**** A monster appears from nowhere! ****\n\n");
-                    fight = 1;
+                    overworld = 2;
 
 
 
                 // FIGHT ---------------------------------------------------------------------
-                while (fight === 1) {
-                    while (spook.health > 0) {
+                while (overworld === 2) {
                     console.log("\nIt's a " + spook.name + "!")
 
                     index = readline.keyInSelect(inFight, "What do you do? ");
@@ -146,9 +141,6 @@ while (overworld === 1) {
                         } else if (rng (0, 5) === 5) {
                             console.log("\n...You dealt 5 damage!\n")
                             spook.health-5
-                        } else if (index === 1) {
-                            console.log("\nExiting inventory...");
-                            var invo = 0
                         } else {
                             console.log("\nExiting V-SCAPE...\n");
                             return;
@@ -159,34 +151,10 @@ while (overworld === 1) {
                         console.log("\nYou have no abilities!\n");
 
                     } else if (index === 2) {
-                        var invo = 1
-//                            // FIGHT INVENTORY ---------------------------------------------------------------
-//                                while (invo === 1) {
-//                                    while (fight === 0) {
-//                                        console.log("\nYou look inside your backpack.")
-//
-//                                        index = readline.keyInSelect(inInventory, "What do you do? ");
-//
-//                                        if (index === 0) {
-//                                            console.log("\nYour inventory:\n" + inventory);
-//
-//                                        } else if (index === 1) {
-//                                            console.log("\nExiting inventory...");
-//                                            var invo = 0
-//                                            var fight = 1
-//
-//                                        } else {
-//                                            console.log("\nExiting V-SCAPE...\n");
-//                                            return;
-//                                        }
-//                                    }
-//                                }
-//                                // ---------------------------------------------------------------------------
-                    } else if (index === 3) {
                         console.log("\nYou try to run...\n")
                         if (rng(1, 4) === 1) {
                             setTimeout(escape, 1000);
-                            var fight = 0;
+                            var overworld = 1;
                         }
 
                     } else {
@@ -195,20 +163,18 @@ while (overworld === 1) {
                     }
                     }
                     console.log("\n\n**** The " + spook.name + " has been slain! ****\n\n")
-                    var fight = 0
+                    console.log("...You got " + spook.drop + "!\n\n")
+                    inventory.push(spook.drop);
+                    var overworld = 1
                 }
                 // ---------------------------------------------------------------------------
-
-
-
-                }
-            } else if (index === 1) {
-                var invo = 1
+                } else if (index === 1) {
+                var overworld = 3
 
 
 
                 // INVENTORY -----------------------------------------------------------------
-                while (invo === 1) {
+                while (overworld === 3) {
                     console.log("\nYou look inside your backpack.")
 
                     index = readline.keyInSelect(inInventory, "What do you do? ");
@@ -218,7 +184,7 @@ while (overworld === 1) {
 
                     } else if (index === 1) {
                         console.log("\nExiting inventory...");
-                        var invo = 0
+                        var overworld = 1
 
                     } else {
                         console.log("\nExiting V-SCAPE...\n");
@@ -233,12 +199,5 @@ while (overworld === 1) {
                 console.log("\nExiting V-SCAPE...\n");
                 return;
             }
-        }
-    }
+
 }
-// ---------------------------------------------------------------------------
-
-
-
-console.log("As you enter the town, you see a sign that reads:/n/n townname...\n")
-console.log("\n...Welcome to townname.")

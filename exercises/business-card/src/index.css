@@ -1,0 +1,46 @@
+html {
+    background: url(https://pbs.twimg.com/media/B_1atmJU8AEtf-L.png) no-repeat center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: sans-serif;
+}
+
+.container {
+    position: relative;
+    left: 7%;
+    display: inline-block;
+}
+
+.card {
+    background-color: rgba(41, 55, 61, .8);
+    color: #ffff07;
+    width: 400px;
+    height: 200px;
+    outline: 2px solid- white;
+    display: inline-block;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.cardName {
+    text-align: center;
+    position: relative;
+    top: 15%;
+}
+
+.cardNum {
+    text-align: center;
+    position: relative;
+    top: 20%;
+}
+
+
+.per-img {
+    height: 190px;
+    width: 80px;
+    position: relative;
+    bottom: 120px;
+    left: 5px
+}

@@ -5,9 +5,8 @@ function Navbar() {
         <div>
             <div className="navbg">
                 <ul>
-                    <li className="nav">Home</li>
-                    <li className="nav">Info</li>
-                    <li className="nav">Products</li>
+                    <li className="nav"><a href="#info">Information</a></li>
+                    <li className="nav"><a href="#title">Products</a></li>
                 </ul>
             </div>
         </div>

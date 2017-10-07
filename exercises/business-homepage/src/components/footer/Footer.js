@@ -4,7 +4,7 @@ function Footer() {
     return (
         <div>
             <span className="footer">
-                (555)-NUM-FAKE
+                1-800-BIG-LIAR
                 <br/>
                 12345 Fake Street
                 <br/>

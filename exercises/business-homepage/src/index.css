@@ -21,27 +21,77 @@ html {
     text-align: center;
     margin-bottom: 200px;
     padding: 0;
-    color: white;
+    color: #ff1155;
     font-family: sans-serif;
     font-size: 2em;
     position: relative;
     right: 20px;
-    top: 85px
+    top: 200px
 }
 
 .navbg {
+    text-align: center;
     height: 75%;
     width: 15%;
-    background-color: rgba(255, 255, 255, .5);
-    position: relative;
+    background-color: rgba(255, 255, 255, 1);
+    position: fixed;
+    top: 13.8%;
+    left: 42.5%;
 }
 
 .footer {
     font-family: sans-serif;
     font-size: 1em;
-    color: rgba(255, 255, 255, .4);
+    color: rgba(255, 255, 255, .3);
     text-align: right;
     position: relative;
-    top: 50%;
+    top: 940px;
     display: block;
+}
+
+.product-name {
+    font-family: sans-serif;
+    font-size: 3em;
+    color: yellow;
+    position: relative;
+    margin: 15px;
+}
+
+.product-desc {
+    font-family: sans-serif;
+    font-size: 1.2em;
+    color: white;
+    position: relative;
+    margin: 20px;
+}
+
+.prod-two {
+    text-align: right;
+}
+
+.prod-four {
+    text-align: right;
+}
+
+.info-title {
+    text-align: right;
+    font-family: sans-serif;
+    font-size: 2em;
+    color: #55ddff;
+    position: relative;
+    margin: 15px;
+    top: 75px;
+}
+
+.info {
+    font-family: sans-serif;
+    font-size: .7em;
+    color: white;
+    position: relative;
+    margin-top: -20px;
+}
+
+a {
+    text-decoration: none;
+    color: #ff1155;
 }
