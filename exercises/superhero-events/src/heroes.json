@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Spiderman",
+        "power": "...Spider Powers?",
+        "img": "http://www.writeups.org/wp-content/uploads/Spider-Man-Marvel-Comics-Peter-Parker-Profile.jpg",
+        "phrase": "My spider-senses are tingling!"
+    },
+    {
+        "name": "Daredevil",
+        "power": "Super Hearing",
+        "img": "http://www.writeups.org/wp-content/uploads/Daredevil-Marvel-Comics-h155.jpg",
+        "phrase": "Bullseye."
+    },
+    {
+        "name": "Batman",
+        "power": "Super Rich",
+        "img": "http://www.dccomics.com/sites/default/files/files/character-pops/batman_char-pop_58910497bad9c5.66936402.png",
+        "phrase": "Puns!"
+    },
+    {
+        "name": "Freakazoid",
+        "power": "Sometimes able to move at light speed. At other times, he only pretends to have superpowers.",
+        "img": "http://static.tvtropes.org/pmwiki/pub/images/heyyafreak.png",
+        "phrase": "Freak out!"
+    }
+]

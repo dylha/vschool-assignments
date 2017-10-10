@@ -1,0 +1,31 @@
+html {
+    background-color: white;
+}
+
+h1 {
+    font-family: sans-serif;
+    font-size: 3em;
+    color: #21374B;
+    text-align: center;
+}
+
+h2 {
+    font-family: sans-serif;
+    font-size: 1.5em;
+    color: #BE4248;
+    text-align: center;
+}
+
+.heroBox {
+    display: inline-block;
+    outline: 1px solid #4A89AA;
+    padding: 25px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    width: 300px;
+}
+
+img {
+    width: 300px;
+    height: 500px;
+}
