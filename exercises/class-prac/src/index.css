@@ -1,0 +1,32 @@
+h1 {
+    font-family: sans-serif;
+    text-align: center;
+    margin-bottom: 0;
+    color: #a6dafd;
+    position: relative;
+}
+
+p {
+    margin-top: 5px;
+    font-size: .65em;
+    font-family: sans-serif;
+    text-align: center;
+    color: #efefef;
+    position: relative;
+}
+
+button {
+    position: relative;
+    left: 68px;
+}
+
+span {
+    color: #33a4db;
+}
+
+.box {
+    width: 300px;
+    height: 250px;
+    position: fixed;
+    left: 40%;
+}
