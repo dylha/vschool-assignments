@@ -1,0 +1,15 @@
+.show{
+    display: inherit;
+}
+
+.hide{
+    display: none;
+}
+
+.add-todo {
+    background-color: #55aabb;
+}
+
+.add-todo:hover {
+    background-color: #3388aa;
+}
