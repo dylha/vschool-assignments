@@ -36,9 +36,9 @@ function userGuess() {
     var y = parseInt(readline.questionInt("Give me an X coordinate 1-10: ")) -1;
     var x = parseInt(readline.questionInt("Give me an Y coordinate 1-10: ")) -1;
     var guessedLocation = grid[x][y];
-    
+
     guessedLocation.hit = true;
-    
+
     if (guessedLocation.isShip) {
         guessedLocation.display = "X"
         numShipsSunk++
@@ -48,8 +48,8 @@ function userGuess() {
         guessedLocation.display = "O"
         console.log("\n:( :( MISS ): ):\n")
     }
-    
-    
+
+
     return guessedLocation.isShip;
 }
 
