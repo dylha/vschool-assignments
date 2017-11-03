@@ -9,7 +9,6 @@ function isShip() {
     return random === 5;
 }
 
-function Location() {
     this.isShip = isShip();
     this.hit = false;
     this.display = "~";
